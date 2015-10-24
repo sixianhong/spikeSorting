@@ -1,0 +1,5 @@
+The algorithm would work as follows: by justing executing the program_excute.m file, it will automatically run all the sub-files. The user first selects the data file for sorting, and later the user will be prompted to select the comparison.mat file in this folder to calculate the program accuracy.
+
+The file “calcmeanwaveform.m”, “calcpropertyratio.m”, “calcstd.m”, “calcstdratio.m”, and “findoutlier.m” are all self-written functions.
+
+The step-of-execution for the algorithm works as follows: first, execute the “find_spikes.m” to get meaningful spikes from the original data file. Second, the “calc_chara.m” file works to calculate the characteristics for each of the wave. Third, “char_judge.m” works to find out the properties that will be used in clustering. Fourth, “clustering.m” is executed to clustering. Fifth, “rearrange_outlier.m” put outliers found in the clustering step to groups that belong to it. “result_calculation.m” calculates the accuracy of the algorithm, and “plotresult.m” plots the clustering results and saves them.
